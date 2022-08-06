@@ -1,0 +1,30 @@
+---
+version: "3"
+
+services:
+  pihole:
+    container_name: Pi-Hole_Unbound
+    image: cbcrowe/pihole-unbound:latest
+    hostname: pihole.olympus.local
+    network_mode: "bridge"
+ 
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "9080:80/tcp"
+      - "9443:443/tcp"
+    
+    environment:
+      TZ: 'Europe/Paris'
+      ServerIP: '192.168.1.142'
+      DNSSEC: 'true'
+      DNS1:  '127.0.0.1#5335'
+
+    volumes:
+      - '/home/atlas/DockerVol/PiHole/etc:/etc/pihole'
+      - '/home/atlas/DockerVol/PiHole/dnsmasq:/etc/dnsmasq.d'
+      - '/home/atlas/DockerVol/PiHole/Certificates:/etc/certificates'
+ #     - '/home/atlas/DockerVol/PiHole/lighttpd/external.conf/:/etc/lighttpd/external.conf'
+ 
+    restart: unless-stopped
