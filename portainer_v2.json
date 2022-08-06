@@ -15,7 +15,7 @@
 				}
 			],
 			"image": "authelia/authelia:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/authelia.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/authelia.png",
 			"name": "authelia",
 			"note": "Requires a configuration.yml file in order to work. Documentation is Available \u003ca href='https://docs.authelia.com/deployment/deployment-ha'\u003ehere\u003c/a\u003e.",
 			"platform": "linux",
@@ -52,7 +52,7 @@
 				}
 			],
 			"image": "lscr.io/linuxserver/heimdall:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/heimdall-icon.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/heimdall-icon.png",
 			"name": "heimdall",
 			"platform": "linux",
 			"ports": [
@@ -76,7 +76,7 @@
 			],
 			"description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
 			"image": "jlesage/nginx-proxy-manager",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/proxy_mgr.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/proxy_mgr.png",
 			"name": "nginx-proxy-manager",
 			"platform": "linux",
 			"ports": [
@@ -101,7 +101,7 @@
 			],
 			"description": "Save recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
 			"image": "gregyankovoy/chowdown:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/chowdown.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/chowdown.png",
 			"name": "Chowdown",
 			"platform": "linux",
 			"ports": [
@@ -146,7 +146,7 @@
 				}
 			],
 			"image": "lscr.io/linuxserver/duckdns:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/duckdns.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/duckdns.png",
 			"name": "duckdns",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
@@ -171,7 +171,7 @@
 				}
 			],
 			"image": "lscr.io/linuxserver/freshrss:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/freshrss-icon.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/freshrss-icon.png",
 			"name": "freshrss",
 			"platform": "linux",
 			"ports": [
@@ -194,7 +194,7 @@
 			],
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
 			"image": "pihole/pihole:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/pihole.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/pihole.png",
 			"name": "pihole",
 			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
 			"platform": "linux",
@@ -226,7 +226,7 @@
 			],
 			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
 			"image": "vaultwarden/server:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/bitwarden.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/bitwarden.png",
 			"name": "vaultwarden",
 			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
 			"platform": "linux",
@@ -251,7 +251,7 @@
 			],
 			"description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
 			"image": "containrrr/watchtower:latest",
-			"logo": "https://raw.githubusercontent.com/atlas34/portainer/Images/master/Images/watchtower.png",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/watchtower.png",
 			"name": "watchtower",
 			"note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
 			"platform": "linux",
