@@ -219,7 +219,7 @@
 			"name": "freshrss",
 			"platform": "linux",
 			"ports": [
-				"8020:80/tcp"
+				"80:8020/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "FreshRSS",
@@ -275,7 +275,7 @@
 			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
 			"platform": "linux",
 			"ports": [
-				"8090:80/tcp"
+				"80:8090/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Vaultwarden",
