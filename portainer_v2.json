@@ -283,7 +283,7 @@
 			"volumes": [
 				{
 					"bind": "/portainer/Vaultwarden",
-					"container": "/config"
+					"container": "/data"
 				}
 			]
 		},
