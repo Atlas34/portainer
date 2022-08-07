@@ -27,7 +27,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Authelia",
+					"bind": "/portainer/Authelia",
 					"container": "/etc/authelia/"
 				}
 			]
@@ -64,7 +64,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Heimdall",
+					"bind": "/portainer/Heimdall",
 					"container": "/config"
 				}
 			]
@@ -81,7 +81,7 @@
 			"platform": "linux",
 			"ports": [
 				"80:8080/tcp",
-				"81:8181/tcp",
+				"81:8081/tcp",
 				"443:4443/tcp"
 			],
 			"restart_policy": "unless-stopped",
@@ -89,7 +89,7 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Nginx-Proxy",
+					"bind": "/portainer/Nginx-Proxy",
 					"container": "/config"
 				}
 			]
@@ -102,7 +102,7 @@
 			"description": "Save recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
 			"image": "gregyankovoy/chowdown:latest",
 			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/chowdown.png",
-			"name": "Chowdown",
+			"name": "chowdown",
 			"platform": "linux",
 			"ports": [
 				"4000:4000/tcp"
@@ -112,7 +112,51 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Chowdown",
+					"bind": "/portainer/Chowdown",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools",
+        "Wiki"
+			],
+			"description": "A modern, lightweight and powerful wiki app built on NodeJS.",
+			"env": [
+				{
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "lscr.io/linuxserver/wikijs:latest",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/wikijs.png",
+			"name": "wikijs",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "WikiJS",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/WikiJS/data",
+					"container": "/data"
+				},
+				{
+					"bind": "/portainer/WikiJS/config",
 					"container": "/config"
 				}
 			]
@@ -175,14 +219,14 @@
 			"name": "freshrss",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"8020:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "FreshRSS",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/freshrss",
+					"bind": "/portainer/FreshRSS",
 					"container": "/config"
 				}
 			]
@@ -195,14 +239,14 @@
 			"description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
 			"image": "pihole/pihole:latest",
 			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/pihole.png",
-			"name": "pihole",
+			"name": "PiHole-Unbound",
 			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
 			"platform": "linux",
 			"ports": [
 				"53:53/tcp",
 				"53:53/udp",
 				"67:67/udp",
-				"1010:80/tcp",
+				"8010:80/tcp",
 				"4443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
@@ -210,11 +254,11 @@
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole",
+					"bind": "/portainer/PiHole/File",
 					"container": "/etc/pihole"
 				},
 				{
-					"bind": "/portainer/Files/AppData/Config/PiHole/DNS",
+					"bind": "/portainer/PiHole/DNS",
 					"container": "/etc/dnsmasq.d"
 				}
 			]
@@ -231,14 +275,14 @@
 			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
 			"platform": "linux",
 			"ports": [
-				"80/tcp"
+				"8090:80/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Vaultwarden",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Vaultwarden",
+					"bind": "/portainer/Vaultwarden",
 					"container": "/config"
 				}
 			]
