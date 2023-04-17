@@ -91,6 +91,7 @@ Unbound is a validating, recursive, caching DNS resolver.
 This stack install piHole and couple it with Unbound.
 
 Visit pihole website - [https://pi-hole.net/](https://pi-hole.net/).
+
 Visit unbound website - [https://nlnetlabs.nl/projects/unbound/about/](https://nlnetlabs.nl/projects/unbound/about/).
 
 ## Duck DNS + Let's Encrypt:
@@ -102,5 +103,6 @@ Duck DNS : free dynamic DNS hosted on AWS
 Let's Encrypt: Certbot is part of EFF’s effort to encrypt the entire Internet. Secure communication over the Web relies on HTTPS, which requires the use of a digital certificate that lets browsers verify the identity of web servers
 
 Visit Duck DNS website - [https://www.duckdns.org/](https://www.duckdns.org/).
+
 Visit Let's Encrypt website - [https://github.com/certbot/certbot](https://github.com/certbot/certbot).
 
