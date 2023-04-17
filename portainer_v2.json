@@ -200,7 +200,7 @@
 				{
 					"default": "5",
 					"label": "DUCKDNS_DELAY",
-					"name": "DUCKDNS_DELAY",
+					"name": "DUCKDNS_DELAY"
 				},
 				{
 					"label": "TOKEN",
