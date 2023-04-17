@@ -22,9 +22,9 @@ services:
       DNS1:  '127.0.0.1#5335'
 
     volumes:
-      - '/home/atlas/DockerVol/PiHole/etc:/etc/pihole'
-      - '/home/atlas/DockerVol/PiHole/dnsmasq:/etc/dnsmasq.d'
-      - '/home/atlas/DockerVol/PiHole/Certificates:/etc/certificates'
- #     - '/home/atlas/DockerVol/PiHole/lighttpd/external.conf/:/etc/lighttpd/external.conf'
+      - '/portainer/PiHole/etc:/etc/pihole'
+      - '/portainer/PiHole/dnsmasq:/etc/dnsmasq.d'
+      - '/portainer/PiHole/Certificates:/etc/certificates'
+ #     - '/portainer/PiHole/lighttpd/external.conf/:/etc/lighttpd/external.conf'
  
     restart: unless-stopped
