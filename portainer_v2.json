@@ -203,33 +203,33 @@
 					"name": "DUCKDNS_DELAY"
 				},
 				{
-					"label": "LETSENCRYPT_DOMAIN",
+					"label": "LETSENCRYPT_DOMAIN (Optional)",
 					"name": "LETSENCRYPT_DOMAIN",
 					"set": ""
 				},
 				{
 					"default": "false",
-					"label": "LETSENCRYPT_WILDCARD",
+					"label": "LETSENCRYPT_WILDCARD (Optional)",
 					"name": "LETSENCRYPT_WILDCARD",
 				},
 				{
-					"label": "LETSENCRYPT_EMAIL",
+					"label": "LETSENCRYPT_EMAIL (Optional)",
 					"name": "LETSENCRYPT_EMAIL",
 					"set": ""
 				},
 				{
 					"default": "false",
-					"label": "TESTING",
+					"label": "TESTING (Optional)",
 					"name": "TESTING"
 				},
 				{
 					"default": "0",
-					"label": "PUID",
+					"label": "PUID (Optional)",
 					"name": "PUID"
 				},
 				{
 					"default": "0",
-					"label": "PGID",
+					"label": "PGID (Optional)",
 					"name": "PGID"
 				}
 			],
@@ -238,7 +238,7 @@
 			"name": "duckdns_letsencrypt",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
-			"title": "Duck_DNS_Let_s_Encrypt",
+			"title": "Duck DNS + Let's Encrypt",
 			"type": 1
 		},
 		{
