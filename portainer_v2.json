@@ -238,7 +238,7 @@
 			"name": "duckdns_letsencrypt",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
-			"title": "Duck DNS + Let's Encrypt",
+			"title": "Duck_DNS_Let_s_Encrypt",
 			"type": 1
 		},
 		{
