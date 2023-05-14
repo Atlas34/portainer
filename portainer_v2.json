@@ -181,48 +181,6 @@
 		},
 		{
 			"categories": [
-				"DNS",
-				"Certificates",
-				"Tools"
-			],
-			"description": "Duck DNS + Let's Encrypt is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
-			"env": [
-				{
-					"label": "DUCKDNS_DOMAIN",
-					"name": "DUCKDNS_DOMAIN",
-					"set": ""
-				},
-				{
-					"label": "DUCKDNS_TOKEN",
-					"name": "DUCKDNS_TOKEN",
-					"set": ""
-				},
-				{
-					"label": "DUCKDNS_DELAY",
-					"name": "DUCKDNS_DELAY",
-					"set": "5",
-				},
-				{
-					"label": "PUID",
-					"name": "PUID",
-					"set": ""
-				},
-				{
-					"label": "PGID",
-					"name": "PGID",
-					"set": ""
-				}
-			],
-			"image": "maksimstojkovic/letsencrypt:latest",
-			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/duckdns.png",
-			"name": "duckdns_letsencrypt",
-			"platform": "linux",
-			"restart_policy": "unless-stopped",
-			"title": "Duck DNS + Let's Encrypt",
-			"type": 1
-		},
-		{
-			"categories": [
 				"Other"
 			],
 			"description": "A free, self-hostable rss aggregator…",
