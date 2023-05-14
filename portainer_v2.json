@@ -204,12 +204,12 @@
 				},
 				{
 					"default": "0",
-					"label": "PUID (Optional)",
+					"label": "PUID",
 					"name": "PUID"
 				},
 				{
 					"default": "0",
-					"label": "PGID (Optional)",
+					"label": "PGID",
 					"name": "PGID"
 				}
 			],
