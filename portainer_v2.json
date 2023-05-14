@@ -210,7 +210,7 @@
 				{
 					"default": "false",
 					"label": "LETSENCRYPT_WILDCARD (Optional)",
-					"name": "LETSENCRYPT_WILDCARD",
+					"name": "LETSENCRYPT_WILDCARD,
 				},
 				{
 					"label": "LETSENCRYPT_EMAIL (Optional)",
@@ -220,7 +220,7 @@
 				{
 					"default": "false",
 					"label": "TESTING (Optional)",
-					"name": "TESTING",
+					"name": "TESTING"
 				},
 				{
 					"default": "0",
