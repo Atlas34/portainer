@@ -203,33 +203,33 @@
 					"name": "DUCKDNS_DELAY"
 				},
 				{
-					"label": "LETSENCRYPT_DOMAIN (Optional)",
+					"label": "LETSENCRYPT_DOMAIN",
 					"name": "LETSENCRYPT_DOMAIN",
 					"set": ""
 				},
 				{
 					"default": "false",
-					"label": "LETSENCRYPT_WILDCARD (Optional)",
+					"label": "LETSENCRYPT_WILDCARD",
 					"name": "LETSENCRYPT_WILDCARD,
 				},
 				{
-					"label": "LETSENCRYPT_EMAIL (Optional)",
+					"label": "LETSENCRYPT_EMAIL",
 					"name": "LETSENCRYPT_EMAIL",
 					"set": ""
 				},
 				{
 					"default": "false",
-					"label": "TESTING (Optional)",
+					"label": "TESTING",
 					"name": "TESTING"
 				},
 				{
 					"default": "0",
-					"label": "PUID (Optional)",
+					"label": "PUID",
 					"name": "PUID"
 				},
 				{
 					"default": "0",
-					"label": "PGID (Optional)",
+					"label": "PGID",
 					"name": "PGID"
 				}
 			],
