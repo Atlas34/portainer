@@ -200,7 +200,7 @@
 					"default": "5",
 					"label": "DUCKDNS_DELAY",
 					"name": "DUCKDNS_DELAY"
-				},
+				}
 			],
 			"image": "maksimstojkovic/letsencrypt:latest",
 			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/duckdns.png",
