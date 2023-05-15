@@ -239,7 +239,13 @@
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Duck DNS + Let's Encrypt",
-			"type": 1
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/certs",
+					"container": "/etc/letsencrypt"
+				}
+			]
 		},
 		{
 			"categories": [
