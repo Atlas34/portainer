@@ -388,6 +388,70 @@
 					"container": "/var/run/docker.sock"
 				}
 			]
+		},
+		{
+			"categories": [
+				"Other",
+				"reverse proxy"
+			],
+			"description": "Træfik (pronounced like traffic) is a modern HTTP reverse proxy and load balancer made to deploy microservices with ease. It supports several backends (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, and a lot more) to manage its configuration automatically and dynamically.",
+			"image": "traefik:latest",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/treafik.png",
+			"name": "traefik",
+			"note": "Create a proxy network before running this template. <a href=\"http://docs.traefik.io/\">Træfik documentation</a>",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Traefik",
+			"type": 1,
+      "network": "proxy",
+      "ports": [
+				"80:80/tcp",
+				"443:443/tcp",
+				"8080:8080/tcp"
+			],
+			"volumes": [
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock",
+          "readonly": true
+				},
+				{
+					"bind": "/portainer/Traefik/acme.json",
+					"container": "/acme.json"
+				},
+				{
+					"bind": "/portainer/Traefik/config.yml",
+					"container": "/config.yml",
+          "readonly": true
+				},
+				{
+					"bind": "/portainer/Traefik/traefik.yml",
+					"container": "/traefik.yml",
+          "readonly": true
+				},
+				{
+					"bind": "/etc/localtime",
+					"container": "/etc/localtime",
+          "readonly": true
+				}
+			],
+      "labels": [
+        { "name": "traefik.enable", "value": "true" },
+        { "name": "traefik.http.routers.traefik.entrypoints", "value": "http" },
+        { "name": "traefik.http.routers.traefik.rule", "value": "Host(`traefik-dashboard.local.example.com`)" },
+        { "name": "traefik.http.middlewares.traefik-auth.basicauth.users", "value": "USER:BASIC_AUTH_PASSWORD" },
+        { "name": "traefik.http.middlewares.traefik-https-redirect.redirectscheme.scheme", "value": "https" },
+        { "name": "traefik.http.middlewares.sslheader.headers.customrequestheaders.X-Forwarded-Proto", "value": "https" },
+        { "name": "traefik.http.routers.traefik.middlewares", "value": "traefik-https-redirect" },
+        { "name": "traefik.http.routers.traefik-secure.entrypoints", "value": "https" },
+        { "name": "traefik.http.routers.traefik-secure.rule", "value": "Host(`traefik-dashboard.local.example.com`)" },
+        { "name": "traefik.http.routers.traefik-secure.middlewares", "value": "traefik-auth" },
+        { "name": "traefik.http.routers.traefik-secure.tls", "value": "true" },
+        { "name": "traefik.http.routers.traefik-secure.tls.certresolver", "value": "cloudflare" },
+        { "name": "traefik.http.routers.traefik-secure.tls.domains[0].main", "value": "local.example.com" },
+        { "name": "traefik.http.routers.traefik-secure.tls.domains[0].sans", "value": "*.local.example.com" },
+        { "name": "traefik.http.routers.traefik-secure.service", "value": "api@internal" }
+      ]
 		}
 	]
 }
