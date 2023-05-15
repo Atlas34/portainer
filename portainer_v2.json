@@ -198,19 +198,29 @@
 					"set": ""
 				},
 				{
+					"default": "5",
 					"label": "DUCKDNS_DELAY",
-					"name": "DUCKDNS_DELAY",
-					"set": "5",
+					"name": "DUCKDNS_DELAY"
 				},
 				{
+					"label": "TOKEN",
+					"name": "TOKEN",
+					"set": ""
+				},
+				{
+					"label": "TOKEN",
+					"name": "TOKEN",
+					"set": ""
+				},
+				{
+					"default": "0",
 					"label": "PUID",
-					"name": "PUID",
-					"set": ""
+					"name": "PUID"
 				},
 				{
+					"default": "0",
 					"label": "PGID",
-					"name": "PGID",
-					"set": ""
+					"name": "PGID"
 				}
 			],
 			"image": "maksimstojkovic/letsencrypt:latest",
