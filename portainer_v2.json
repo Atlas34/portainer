@@ -203,14 +203,24 @@
 					"name": "DUCKDNS_DELAY"
 				},
 				{
-					"label": "TOKEN",
-					"name": "TOKEN",
+					"label": "LETSENCRYPT_DOMAIN",
+					"name": "LETSENCRYPT_DOMAIN",
 					"set": ""
 				},
 				{
-					"label": "TOKEN",
-					"name": "TOKEN",
+					"label": "LETSENCRYPT_WILDCARD",
+					"name": "LETSENCRYPT_WILDCARD",
+					"set": "false"
+				},
+				{
+					"label": "LETSENCRYPT_EMAIL",
+					"name": "LETSENCRYPT_EMAIL",
 					"set": ""
+				},
+				{
+					"label": "TESTING",
+					"name": "TESTING",
+					"set": "false"
 				},
 				{
 					"default": "0",
