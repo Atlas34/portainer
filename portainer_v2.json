@@ -208,9 +208,9 @@
 					"set": ""
 				},
 				{
+					"default": "false",
 					"label": "LETSENCRYPT_WILDCARD",
-					"name": "LETSENCRYPT_WILDCARD",
-					"set": "false"
+					"name": "LETSENCRYPT_WILDCARD"
 				},
 				{
 					"label": "LETSENCRYPT_EMAIL",
