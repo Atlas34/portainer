@@ -182,10 +182,40 @@
 		{
 			"categories": [
 				"DNS",
+				"Tools"
+			],
+			"description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
+			"env": [
+				{
+					"label": "DUCKDNS_DOMAIN",
+					"name": "DUCKDNS_DOMAIN",
+					"set": ""
+				},
+				{
+					"label": "DUCKDNS_TOKEN",
+					"name": "DUCKDNS_TOKEN",
+					"set": ""
+				},
+				{
+					"default": "5",
+					"label": "DUCKDNS_DELAY",
+					"name": "DUCKDNS_DELAY"
+				},
+			],
+			"image": "maksimstojkovic/letsencrypt:latest",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/duckdns.png",
+			"name": "duckdns",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"title": "Duck DNS",
+			"type": 1
+		},
+		{
+			"categories": [
 				"Certificates",
 				"Tools"
 			],
-			"description": "Duck DNS + Let's Encrypt is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
+			"description": "Let's Encrypt is a free service which let people and organizations around the world obtain, renew, and manage SSL/TLS certificates\r\n",
 			"env": [
 				{
 					"label": "DUCKDNS_DOMAIN",
@@ -224,21 +254,21 @@
 				},
 				{
 					"default": "0",
-					"label": "PUID",
-					"name": "PUID"
+					"label": "UID",
+					"name": "UID"
 				},
 				{
 					"default": "0",
-					"label": "PGID",
-					"name": "PGID"
+					"label": "GID",
+					"name": "GID"
 				}
 			],
 			"image": "maksimstojkovic/letsencrypt:latest",
-			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/duckdns.png",
-			"name": "duckdns_letsencrypt",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/letsencrypt.png",
+			"name": "letsencrypt",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
-			"title": "Duck DNS + Let's Encrypt",
+			"title": "Let's Encrypt",
 			"type": 1,
 			"volumes": [
 				{
