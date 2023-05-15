@@ -19,6 +19,7 @@ services:
       - DUCKDNS_TOKEN=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
       - DUCKDNS_DOMAIN=test.duckdns.org
       - LETSENCRYPT_DOMAIN= #optional
+      - LETSENCRYPT_CHAIN= #optional
       - LETSENCRYPT_WILDCARD=false #optional
       - LETSENCRYPT_EMAIL= #optional
       - TESTING=false #optional
