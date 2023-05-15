@@ -202,7 +202,7 @@
 					"name": "DUCKDNS_DELAY"
 				}
 			],
-			"image": "maksimstojkovic/letsencrypt:latest",
+			"image": "maksimstojkovic/duckdns:latest",
 			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/duckdns.png",
 			"name": "duckdns",
 			"platform": "linux",
@@ -215,7 +215,7 @@
 				"Certificates",
 				"Tools"
 			],
-			"description": "Let's Encrypt is a free service which let people and organizations around the world obtain, renew, and manage SSL/TLS certificates\r\n",
+			"description": "Let\\'s Encrypt is a free service which let people and organizations around the world obtain, renew, and manage SSL/TLS certificates.\r\n",
 			"env": [
 				{
 					"label": "DUCKDNS_DOMAIN",
