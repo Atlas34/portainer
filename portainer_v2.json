@@ -215,7 +215,7 @@
 				"Certificates",
 				"Tools"
 			],
-			"description": "Let\'s Encrypt is a free service which let people and organizations around the world obtain, renew, and manage SSL/TLS certificates.\r\n",
+			"description": "Lets Encrypt is a free service which let people and organizations around the world obtain, renew, and manage SSL/TLS certificates.\r\n",
 			"env": [
 				{
 					"label": "DUCKDNS_DOMAIN",
