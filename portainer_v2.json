@@ -210,7 +210,7 @@
 				{
 					"default": "false",
 					"label": "LETSENCRYPT_WILDCARD",
-					"name": "LETSENCRYPT_WILDCARD"
+					"name": "LETSENCRYPT_WILDCARD",
 				},
 				{
 					"label": "LETSENCRYPT_EMAIL",
@@ -218,14 +218,9 @@
 					"set": ""
 				},
 				{
-					"default": "chain",
-					"label": "LETSENCRYPT_CHAIN",
-					"name": "LETSENCRYPT_CHAIN"
-				},
-				{
-					"default": "false",
 					"label": "TESTING",
-					"name": "TESTING"
+					"name": "TESTING",
+					"set": "false"
 				},
 				{
 					"default": "0",
@@ -244,13 +239,7 @@
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Duck DNS + Let's Encrypt",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/certs",
-					"container": "/etc/letsencrypt"
-				}
-			]
+			"type": 1
 		},
 		{
 			"categories": [
