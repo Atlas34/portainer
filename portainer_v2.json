@@ -71,6 +71,40 @@
 		},
 		{
 			"categories": [
+				"Task",
+				"Tools"
+			],
+			"description": "Focalboard is an open-source, self-hosted project management tool that's an alternative to Trello, Notion, and Asana. It's designed to help teams stay organized and aligned.Focalboard is an open-source, self-hosted project management tool that's an alternative to Trello, Notion, and Asana. It's designed to help teams stay organized and aligned.Focalboard is an open-source, self-hosted project management tool that's an alternative to Trello, Notion, and Asana. It's designed to help teams stay organized and aligned.",
+			"image": "mattermost/focalboard",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/folcalboard.png",
+			"name": "focalboard",
+			"platform": "linux",
+			"ports": [
+				"8356:8000"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "FocalBoard",
+			"type": 1
+		},
+		{
+			"categories": [
+				"Diagrams",
+				"Tools"
+			],
+			"description": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams with a hand-drawn feel. It's designed to be simple, intuitive, and to allow rapid collaboration.",
+			"image": "excalidraw/excalidraw:latest",
+			"logo": "https://github.com/Atlas34/portainer/raw/main/Images/excalidraw.png",
+			"name": "excalidraw",
+			"platform": "linux",
+			"ports": [
+				"3430:80"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Excalidraw",
+			"type": 1
+		},
+		{
+			"categories": [
 				"Diagrams",
 				"Tools"
 			],

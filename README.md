@@ -70,6 +70,22 @@ Watchtower will pull down your new image, gracefully shut down your existing con
 
 Visit the website - [https://containrrr.dev/watchtower/](https://containrrr.dev/watchtower/).
 
+## Focal Board:
+
+<p align="center"><img src="https://github.com/Atlas34/portainer/raw/main/Images/focalbaord.png" height="100"/></p>
+
+Focalboard is an open-source, self-hosted project management tool that's an alternative to Trello, Notion, and Asana. It's designed to help teams stay organized and aligned.
+
+Visit the website - [https://www.focalboard.com/](https://www.focalboard.com/).
+
+## Excalidraw:
+
+<p align="center"><img src="https://github.com/Atlas34/portainer/raw/main/Images/excalidraw.png" height="100"/></p>
+
+Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams with a hand-drawn feel. It's designed to be simple, intuitive, and to allow rapid collaboration.
+
+Visit the website - [https://excalidraw.com/](https://excalidraw.com/).
+
 ## Draw IO:
 
 <p align="center"><img src="https://github.com/Atlas34/portainer/raw/main/Images/draw-io.png" height="100"/></p>
