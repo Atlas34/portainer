@@ -72,7 +72,7 @@ Visit the website - [https://containrrr.dev/watchtower/](https://containrrr.dev/
 
 ## Focal Board:
 
-<p align="center"><img src="https://github.com/Atlas34/portainer/raw/main/Images/focalbaord.png" height="100"/></p>
+<p align="center"><img src="https://github.com/Atlas34/portainer/raw/main/Images/focalboard.png" height="100"/></p>
 
 Focalboard is an open-source, self-hosted project management tool that's an alternative to Trello, Notion, and Asana. It's designed to help teams stay organized and aligned.
 
